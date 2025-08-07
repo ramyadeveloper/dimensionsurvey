@@ -44,6 +44,7 @@
             font-size: 50px;
             text-align: center;
             color: brown;
+            font-family: 'Times New Roman', Times, serif;
            
         }
         .home h2{
@@ -52,11 +53,39 @@
             
         }
         .background{
-            background-color: darkgray;
+            background-color: rgb(219, 216, 216);
         }
         .content{
             color:crimson;
+            font-size: 35px;
+        }
+
+        .highlights {
+            
+            padding: 40px 20px;
+            text-align:left;
+        }
+
+        .highlights h2 {
+            font-size: 32px;
+            color: brown;
+            
+        }
+
+        .highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights li {
             font-size: 25px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .footer{
+            background-color: white;
+            text-align: center;
         }
 
         
@@ -65,7 +94,7 @@
 <body>
 
     <div class="header">
-        <div class="logo"><img src="/Users/ramya/Documents/WEBSITE/logo.png" alt="Company Logo" height="150"width="150"></div>
+        <div class="logo"><img src="/Users/ramya/Documents/GitHub/dimensionsurvey/logo.png" alt="Company Logo" height="150"width="150"></div>
         <div class="heading">
             <h1>A DIMENSIONAL CONTROL SURVEY COMPANY</h1>
             <h2>SURVEY & ALIGNMENT</h2></div>
@@ -88,9 +117,23 @@
         <br>
         <br>
         <br>
-        <p class="content">Contact Us Today:00000000000</p>
+        <p class="content">Contact Us Today:<a href="tel:+9194005217">+91 9400705217</a></p>
         </p>
     </section>
+    <section class="highlights">
+        <h2>Our Highlights</h2>
+        <ul>
+            <li><img src="check.png" alt="check" style="width:16px;"> Reverse Engineering & As-Built Documentation</li>
+            <li><img src="check.png" alt="check" style="width:16px;">Offshore & Onshore Dimensional Control</li>
+            <li><img src="check.png" alt="check" style="width:16px;">Rig Alignment, FPSO Retrofit Support</li>
+            <li><img src="check.png" alt="check" style="width:16px;">3D Laser Scanning & Modeling</li>
+        </ul>    
+    </section>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; Dimensional Control Survey. All rights reserved.</p>
+        </footer>
     </div>
  
 </body>
