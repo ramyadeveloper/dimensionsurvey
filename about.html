@@ -49,6 +49,59 @@
     .background{
             background-color: rgb(219, 216, 216);
     }
+
+    .container {
+        display: flex;
+        align-items: center; /* Align items vertically */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                justify-content: space-between; /* Space between text & image */
+        padding: 30px;
+    }
+
+    .text-section {
+      flex: 1; /* Takes equal space */
+      padding-right: 20px;
+      padding-left: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 25px;
+    }
+
+    .image-section {
+      flex: 1;
+      text-align: right; /* Aligns image to right */
+    }
+
+    .image-section img {
+      max-width: 100%; /* Makes image responsive */
+      height: auto;
+    }
+    .left-section {
+        flex: 1;
+        padding-left: 30px;
+    }
+    .right-section {
+        flex: 2;
+    }
+    .left-section h2 {
+        font-size: 35px;
+        margin: 0;
+        
+    }
+    .right-section p {
+        font-size: 25px;
+        line-height: 1.6;
+        margin: 0;
+        background-color: white;
+        padding-left: 30px;
+        border: 2px solid #000;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        
+    }
+    .footer{
+            background-color: white;
+            text-align: center;
+    }
+   
+
 </style>
 <body>
     <div class="header">
@@ -67,5 +120,78 @@
         <section class="about" >
            <h1>ABOUT US</h1>
         </section>
+        <div class="container">
+            <div class="text-section">
+                <h2>Who We Are</h2> 
+                <p >
+                    Dimensional Survey Systems India is a specialized Dimensional Control Survey company 
+                    delivering precision surveying and reverse engineering solutions across the 
+                    Oil & Gas, Marine, and Offshore sectors.
+                </p>
+                 
+              </div>
+            
+              <div class="image-section">
+                <img src="aboutpic.jpg" alt="Company Image"> 
+              </div>
+            </div>
+            </div>
+            <div class="container" background-color="white">
+                <div class="left-section">
+                <h2>Our Mission</h2>
+            </div>
+            <div class="right-section">
+                <p> Our mission is to deliver high-accuracy dimensional solutions that empower our clients to work with confidence.<br> 
+                    We specialize in precise measurements and advanced survey techniques that <br>
+                    reduce operational risk, enhance productivity, and support informed decision-making.<br>
+                    <br>By combining cutting-edge technology with our deep industry expertise, <br>we help organizations in construction, engineering, and industrial sectors streamline workflows, maintain safety standards, 
+                    <br>and achieve project success—on time and within budget. Our commitment to quality, integrity, and innovation ensures that every measurement 
+                    <br>We provide stands up to the highest professional and technical standards.
+                </p>
+            </div>
+            <br>
+            <br>
+            
+            <div class="left-section">
+                <h2>Our Vision</h2>
+            </div>
+            <div class="right-section">
+                <p> Our vision is to be recognized as a global benchmark in offshore and industrial dimensional control. <br>We aspire to set the highest standards of precision, reliability, and innovation in our field,<br> ensuring that every project we undertake delivers measurable value.<br>
+
+                    By embracing cutting-edge technology, nurturing skilled expertise, and fostering a culture of excellence,<br> we aim to provide solutions that enhance safety, reduce costly errors, <br>and optimize performance across industries worldwide.<br>
+                    
+                    We are committed to becoming a trusted partner for organizations that rely on accurate dimensional data,<br> helping them build, operate, and maintain their assets with confidence and efficiency.
+                    
+                    
+                </p>
+            </div>
+        </div>
+        <div class="background" >
+            <br><br><br>
+            
+            <div class="container">
+                <div class="text-section">
+                    <h2>Why Choose Us</h2> 
+                    <p >
+                        - Industry-standard instruments<br>
+                        - Highly experienced offshore certified surveyors<br>
+                        - Quick mobilization, global project experience<br>
+                        - Compliance with ISO and HSE standards
+
+                    </p>
+                     
+                  </div>
+                
+                  <div class="image-section">
+                    <img src="tools.jpg" alt="Company Image"> 
+                  </div>
+            </div>
+        </div>
+    <div class="footer">
+        <footer>
+            <p>&copy; Dimensional Control Survey. All rights reserved.</p>
+        </footer>
+    </div>
+        
 </body>
 </html>
