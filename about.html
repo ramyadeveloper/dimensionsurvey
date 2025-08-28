@@ -2,69 +2,115 @@
 <html>
 <head>
     <title>DimensionalSurvey</title>
-</head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 <style>
     .header {
-        display: block;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #e4ddf4;
-        padding: 10px 20px;
-        color: white;
-    }  
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            background-color:#e4ddf4;
+            padding: 10px 20px;
+            color: white;
+        }  
+            
+
         
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .menu a {
+           
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 25px;
+            color: #2d2d2d;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .heading h1 {
+            margin-left: 150px;
+            margin-top: 0px;
+            font-size: 40px;
+            text-align: center;
+            color: #2d2d2d;
+            
+        }
+        .heading h2 {
+            margin-left: 150px;
+            margin-top: 0px;
+            font-size: 35px;
+            text-align: center;
+            color: #2d2d2d;
+        }
+        .home h1{
 
-    
-    .logo {
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .menu a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 25px;
-    }
-    .menu a:hover {
-        text-decoration: underline;
-    }
-    .heading h1 {
-        margin-left: 150px;
-        margin-top: 0px;
-        font-size: 40px;
-        text-align: center;
-    }
-    .heading h2 {
-        margin-left: 150px;
-        margin-top: 0px;
-        font-size: 35px;
-        text-align: center;
-    }
-    .about h1{
-        font-size: 50px;
-        text-align: center;
-        color: brown;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    .background{
-            background-color: rgb(219, 216, 216);
-    }
+            font-size: 50px;
+            text-align: center;
+            color:#2d2d2d;
+            font-family: 'Roboto', 'Open Sans', 'Lato';
+           
+        }
+        .home h2{
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        .background{
+            background-color: #fffbf0;
+            font-family:'OpenSans','Roboto','Lato';
+        }
+        .content{
+            color:#2d2d2d;
+            font-size: 35px;
+        }
 
+        .highlights {
+            
+            padding: 40px 20px;
+            text-align:left;
+            color: #2d2d2d;
+        }
+
+        .highlights h2 {
+            font-size: 36px;
+            
+            
+        }
+
+        .highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights li {
+            font-size: 25px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .footer{
+            background-color: white;
+            text-align: center;
+        }
+
+        .blink {
+            /* animation: blink-animation 1s steps(2, start) infinite;
+            -webkit-animation: blink-animation 1s steps(2, start) infinite; */
+            color: rgb(12, 12, 12);
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        
     .container {
         display: flex;
         align-items: center; /* Align items vertically */
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 justify-content: space-between; /* Space between text & image */
-        padding: 30px;
-    }
-
-    .text-section {
-      flex: 1; /* Takes equal space */
-      padding-right: 20px;
-      padding-left: 20px;
-      font-family: Arial, sans-serif;
-      font-size: 25px;
+      padding: 30px;
     }
 
     .image-section {
@@ -73,38 +119,12 @@
     }
 
     .image-section img {
-      max-width: 100%; /* Makes image responsive */
+      max-width: 80%; /* Makes image responsive */
       height: auto;
     }
-    .left-section {
-        flex: 1;
-        padding-left: 30px;
-    }
-    .right-section {
-        flex: 2;
-    }
-    .left-section h2 {
-        font-size: 35px;
-        margin: 0;
-        
-    }
-    .right-section p {
-        font-size: 25px;
-        line-height: 1.6;
-        margin: 0;
-        background-color: white;
-        padding-left: 30px;
-        border: 2px solid #000;
-        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-        
-    }
-    .footer{
-            background-color: white;
-            text-align: center;
-    }
-   
 
-</style>
+    </style>
+</head>
 <body>
     <div class="header">
         <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
