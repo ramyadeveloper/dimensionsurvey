@@ -1,173 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DimensionalSurvey</title>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<style>
-    .header {
+    <style>
+      .header {
         display: block;
         justify-content: space-between;
         align-items: center;
         background-color:#e4ddf4;
         padding: 10px 20px;
         color: white;
-    }  
-        
-
-    
-    .logo {
+     }  
+      logo {
         font-size: 30px;
         font-weight: bold;
-    }
-    .menu a {
-        color: #2d2d2d;
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 25px;
-    }
-    .menu a:hover {
+      }
+
+      .menu a {
+   
+         text-decoration: none;
+         margin-left: 20px;
+         font-size: 25px;
+         color: #2d2d2d;
+       }
+      .menu a:hover {
         text-decoration: underline;
-    }
-    .heading h1 {
-        margin-left: 150px;
-        margin-top: 0px;
-        font-size: 40px;
-        text-align: center;
-    }
-    .heading h2 {
-        margin-left: 150px;
-        margin-top: 0px;
-        font-size: 35px;
-        text-align: center;
-    }
-    .service h1{
+      } 
+      .service h1{
         font-size: 50px;
-            text-align: center;
-            color:#2d2d2d;
-            font-family: 'Roboto', 'Open Sans', 'Lato';
-    }
-    .background{
+        text-align: center;
+        color:#2d2d2d;
+        font-family: 'Roboto', 'Open Sans', 'Lato';
+      }
+      .background{
             background-color: #fffbf0;
             font-family:'Open Sans','Roboto','Lato';
             font-size: 20px;
-        }
-    .container {
-        display: flex;
-        align-items: center; /* Align items vertically */
-        justify-content: space-between; /* Space between text & image */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-        padding: 30px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-    }
+      }
+    </style>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
 
-    .text-section {
-      flex: 1; /* Takes equal space */
-      padding-right: 20px;
-      padding-left: 20px;
-      font-family: Arial, sans-serif;
-      font-size: 25px;
-    }
+  <!-- Navbar -->
+  <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Company</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
 
-    .image-section {
-      flex: 1;
-      text-align: right; /* Aligns image to right */
-    }
-
-    .image-section img {
-      max-width: 100%; /* Makes image responsive */
-      height: auto;
-    }
-    .left-section {
-        flex: 1;
-        padding-left: 30px;
-    }
-    .right-section {
-        flex: 2;
-    }
-    .left-section h2 {
-        font-size: 35px;
-        margin: 0;
-        
-    }
-    .right-section p {
-        font-size: 25px;
-        line-height: 1.6;
-        margin: 0;
-        background-color: white;
-        padding-left: 30px;
-        border: 2px solid #000;
-        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-        
-    }
-    .footer{
-            background-color: white;
-            text-align: center;
-    }
-    .highlights {
-            
-            padding: 40px 20px;
-            text-align:left;
-            font-size:25px;
-    }
-
-    .highlights h2 {
-            font-size: 32px;
-            color: brown;
-            
-    }
-
-    .highlights ul {
-            list-style: none;
-            padding: 0;
-    }
-
-    .highlights li {
-            font-size: 28px;
-            margin: 10px 0;
-            color: rgb(109, 24, 24);
-    }
-    .highlights p {
-        font-size: 25px;
-    }
+  <div class="header">
+    <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="project.html">Projects</a>
+            <a href="industries.html">Industries</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+</div>
+<div class="background">
+    <br><br>
+    <!-- <section class="about" >
+       <h1>ABOUT US</h1>
+    </section> -->
+    <header class="text-black text-center py-5">
+        <div class="container">
+          <h1 class="service" >OUR SERVICES</h1>
+          <p class="lead">Providing precision-driven solutions for offshore and industrial projects.</p>
+        </div>
+      </header>
    
 
-</style>
-<body>
-    <div class="header">
-        <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="service.html">Services</a>
-                <a href="project.html">Projects</a>
-                <a href="industries.html">Industries</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-    </div>
-    <div class="background">
-        <br><br>
-        <section class="service" >
-           <h1>SERVICES</h1>
-            <div class="highlights">
-                <ul>
-                    <li><img src="check.png" alt="check" style="width:16px;"> Dimensional Control Survey</li>
-                    <p >Accurate measurement and modeling of complex offshore and industrial structures to millimeter-level precision.
-                    </p>
-                    <li><img src="check.png" alt="check" style="width:16px;">Reverse Engineering</li>
-                    <p>From physical components to digital 3D models and drawings — ideal for retrofits, repairs, and documentation</p>
-                    <li><img src="check.png" alt="check" style="width:16px;">Laser Scanning</li>
-                    <p>High-resolution 3D laser scanning for platforms, vessels, modules, and facilities</p>
-                    <li><img src="check.png" alt="check" style="width:16px;">As-Built Documentation</li>
-                    <p>Detailed as-built models, GA drawings, fabrication drawings, and clash detection</p>
-                    <li><img src="check.png" alt="check" style="width:16px;">FPSO, Rig & Ship Surveys</li>
-                    <p>Specialized surveys for jack-up rigs, semisubs, FPSOs, and ships, <br>including pre-docking and post-installation alignment checks</p>
-                    <li><img src="check.png" alt="check" style="width:16px;">Structural Alignment</li>
-                    <p>Precise alignment and geometry control of modules, skids, derricks, piping, and equipment</p>
-                </ul>    
-           </div>
-           
-        </section>
 
+  <!-- Page Header -->
+  <!-- <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Our Services</h1>
+      <p class="lead">Providing precision-driven solutions for offshore and industrial projects.</p>
     </div>
+  </header> -->
+
+  <!-- Services Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Service 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-rulers display-4 text-primary"></i>
+              <h5 class="card-title mt-3">Dimensional Control Survey</h5>
+              <p class="card-text">
+                Accurate measurement and modeling of complex offshore and industrial structures to millimeter-level precision.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-cpu-fill display-4 text-success"></i>
+              <h5 class="card-title mt-3">Reverse Engineering</h5>
+              <p class="card-text">
+                From physical components to digital 3D models and drawings — ideal for retrofits, repairs, and documentation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-camera display-4 text-warning"></i>
+              <h5 class="card-title mt-3">Laser Scanning</h5>
+              <p class="card-text">
+                High-resolution 3D laser scanning for platforms, vessels, modules, and facilities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-file-earmark-text-fill display-4 text-danger"></i>
+              <h5 class="card-title mt-3">As-Built Documentation</h5>
+              <p class="card-text">
+                Detailed as-built models, GA drawings, fabrication drawings, and clash detection.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-truck display-4 text-info"></i>
+              <h5 class="card-title mt-3">FPSO, Rig & Ship Surveys</h5>
+              <p class="card-text">
+                Specialized surveys for jack-up rigs, semisubs, FPSOs, and ships, including pre-docking and post-installation alignment checks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-diagram-3-fill display-4 text-secondary"></i>
+              <h5 class="card-title mt-3">Structural Alignment</h5>
+              <p class="card-text">
+                Precise alignment and geometry control of modules, skids, derricks, piping, and equipment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; Dimensional Control Survey. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
