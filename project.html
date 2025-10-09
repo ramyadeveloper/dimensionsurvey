@@ -41,14 +41,60 @@
       max-width: 100%; /* Makes image responsive */
       height: auto;
     }
+    .header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#e4ddf4;
+        padding: 10px 20px;
+        color: white;
+     }  
+      logo {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .menu a {
+   
+         text-decoration: none;
+         margin-left: 20px;
+         font-size: 25px;
+         color: #2d2d2d;
+       }
+      .menu a:hover {
+        text-decoration: underline;
+      } 
+      .project h1{
+        font-size: 50px;
+        text-align: center;
+        color:#2d2d2d;
+        font-family: 'Roboto', 'Open Sans', 'Lato';
+      }
+      .background{
+            background-color: #fffbf0;
+            font-family:'Open Sans','Roboto','Lato';
+            font-size: 20px;
+      }
   </style>
 </head>
 <body>
-
+  <div class="header">
+    <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="project.html">Projects</a>
+            <a href="industries.html">Industries</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+</div>
   <!-- Header -->
-  <header class="text-center py-4 text-black">
-    <h1 class="display-5 fw-bold">OUR PROJECTS</h1>
-  </header>
+  <div class="background">
+    <br><br>
+      <header class="text-center py-4 text-black">
+        <h1 class="display-5 fw-bold">OUR PROJECTS</h1>
+      </header>
 
   <!-- Main Section -->
   <main class="container my-5">
@@ -96,7 +142,7 @@
     <br>
 
   </main>
-
+</div>
   <!-- Footer -->
   <footer class="text-center py-3 bg-dark text-white">
     <small>© 2025 Industrial Survey Solutions</small>
