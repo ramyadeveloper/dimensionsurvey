@@ -32,13 +32,22 @@
       font-size: 1.75rem;
       font-weight: 700;
     }
+    .image-section {
+      flex: 1;
+      text-align: left; /* Aligns image to left */
+    }
+
+    .image-section img {
+      max-width: 100%; /* Makes image responsive */
+      height: auto;
+    }
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header class="text-center py-4 text-black">
-    <h1 class="display-5 fw-bold">OUT PROJECTS</h1>
+    <h1 class="display-5 fw-bold">OUR PROJECTS</h1>
   </header>
 
   <!-- Main Section -->
@@ -49,7 +58,7 @@
       <div class="row g-4 align-items-center">
 
         <!-- Left Column: Images -->
-        <div class="col-md-6">
+        <div class="col-md-6 image-section">
           <!-- <div class="row g-3">
             <div class="col-12">
               <img src="https://via.placeholder.com/600x400?text=3D+Laser+Scanning" alt="3D Laser Scan" class="project-image">
