@@ -9,16 +9,17 @@
 
   <style>
     .hero-section {
-      /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      /* background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
                   url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center center/cover; */
-         background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+         background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
                   url('homeimg.jpg') no-repeat center center/cover;
       height: 100vh;
+      font-family: 'Libre Franklin', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: #fff;
+      color: rgb(14, 9, 9);
       padding: 0 15px;
     }
     .hero-section h1 {
@@ -28,28 +29,29 @@
     .hero-section h2 {
       font-size: 1.3rem;
       font-weight: 400;
-      color: #e5e5e5;
+      color: rgb(14, 9, 9);
       margin-bottom: 30px;
     }
-    .highlight-list {
+    /* .highlight-list {
       text-align: left;
       display: inline-block;
       margin-bottom: 30px;
+      background-color: #fed600;
     }
     .highlight-list li {
       margin-bottom: 8px;
-    }
+    } */
     .btn-cta {
-      background-color: #f9a825;
+      background-color: #fed600;
       color: #000;
-      font-weight: bold;
       padding: 12px 25px;
       border-radius: 4px;
       transition: background 0.3s;
       text-decoration: none;
+      font-size: 1.5rem;
     }
     .btn-cta:hover {
-      background-color: #ffcc33;
+      background-color: #fed600;
       color: #000;
     }
 
@@ -57,7 +59,7 @@
       .hero-section h1 {
         font-size: 2rem;
       }
-      .hero-section h2 {
+      .hero-section h3 {
         font-size: 1rem;
       }
     }
@@ -65,7 +67,7 @@
             display: block;
             justify-content: space-between;
             align-items: center;
-            background-color:#f6cb4a;
+            background-color:#fed600;
             padding: 10px 20px;
             color: white;
         }  
@@ -101,6 +103,32 @@
             text-align: center;
             color: #2d2d2d;
         }
+        .bar {
+           background-color: #fed600; /* Bootstrap purple */
+           height: 200px;
+           position: relative;
+           justify-content: left;
+           align-items: left;
+
+        }
+        .circle {
+           width: 60px;
+           height: 60px;
+           background-color: #fed600;
+           border-radius: 50%;
+           position: absolute;
+           top: -30px;
+           right: 80px;
+           display: flex;
+           justify-content: left;
+           align-items: left;
+           color: white;
+           font-weight: bold;
+        }
+        .footer{
+            background-color: white;
+            text-align: center;
+        }
   </style>
 </head>
 <body>
@@ -115,30 +143,42 @@
         <a href="service.html">Services</a>
         <a href="project.html">Projects</a>
         <a href="industries.html">Industries</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" >Contact Us</a>
     </div>
 </div>
+<br><br>
+<h1 class="mb-3" style="font-family: 'Libre Franklin', sans-serif">Precision Beyond Measure-<br> Dimensional Control Survey Experts</h1>
+      <h5 class="mb-4" style="font-family: 'Libre Franklin', sans-serif">Trusted partner in Oil &amp; Gas, Marine, Rigs, FPSO, and Offshore Engineering Solutions.</h5========================================================>
 
   <!-- Hero Section -->
-  <section class="hero-section d-flex flex-column justify-content-center">
+  <section class="hero-section d-flex flex-column zwc-content-left" >
     <div class="container">
-      <h1 class="mb-3">Precision Beyond Measure – Dimensional Control Survey Experts</h1>
-      <h2 class="mb-4">Trusted partner in Oil &amp; Gas, Marine, Rigs, FPSO, and Offshore Engineering Solutions.</h2>
-
-      <ul class="highlight-list list-unstyled">
-        <li>✅ Reverse Engineering &amp; As-Built Documentation</li>
-        <li>✅ Offshore &amp; Onshore Dimensional Control</li>
-        <li>✅ Rig Alignment, FPSO Retrofit Support</li>
-        <li>✅ 3D Laser Scanning &amp; Modeling</li>
-      </ul>
+      <!-- <h1 class="mb-3">Precision Beyond Measure,<br> Dimensional Control Survey Experts</h1>
+      <h2 class="mb-4">Trusted partner in Oil &amp; Gas, Marine, Rigs, FPSO, and Offshore Engineering Solutions.</h2> -->
+      <div class="container-fluid p-0">
+        <div class="bar w-100">
+          <!-- <div class="circle"> -->
+            <i class="bi bi-star">
+              
+            </i>  <!-- You can put text or icon -->
+              <ul class="highlight-list list-unstyled">
+                <li>✅ Reverse Engineering &amp; As-Built Documentation</li><br>
+                <li>✅ Offshore &amp; Onshore Dimensional Control</li><br>
+                <li>✅ Rig Alignment, FPSO Retrofit Support</li><br>
+                <li>✅ 3D Laser Scanning &amp; Modeling</li>
+              </ul>
+      
+            <br>
+          </div>
+        </div>
 
       <br>
-      <a href="tel:+919400005210" class="btn btn-cta">Contact Us Today</a>
+      <a href="tel:+919400005210" class="btn btn-cta">Contact Us</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="footer">
     <p>&copy; Dimensional Control Survey. All rights reserved.</p>
   </footer>
 
