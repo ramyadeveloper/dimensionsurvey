@@ -1,15 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DimensionalSurvey</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <style>
-        .header {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dimensional Control Survey Experts</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .hero-section {
+      /* background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
+                  url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center center/cover; */
+         background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),
+                  url('homeimg.jpg') no-repeat center center/cover;
+      height: 100vh;
+      font-family: 'Libre Franklin', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: rgb(14, 9, 9);
+      padding: 0 15px;
+    }
+    .hero-section h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    .hero-section h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: rgb(14, 9, 9);
+      margin-bottom: 30px;
+    }
+    /* .highlight-list {
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 30px;
+      background-color: #fed600;
+    }
+    .highlight-list li {
+      margin-bottom: 8px;
+    } */
+    .btn-cta {
+      background-color: #fed600;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 4px;
+      transition: background 0.3s;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+    .btn-cta:hover {
+      background-color: #fed600;
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+      .hero-section h3 {
+        font-size: 1rem;
+      }
+    }
+    .header {
             display: block;
             justify-content: space-between;
             align-items: center;
-            background-color:#e4ddf4;
+            background-color:#fed600;
             padding: 10px 20px;
             color: white;
         }  
@@ -45,150 +103,86 @@
             text-align: center;
             color: #2d2d2d;
         }
-        .home h1{
+        .bar {
+           background-color: #fed600; /* Bootstrap purple */
+           height: 200px;
+           position: relative;
+           justify-content: left;
+           align-items: left;
 
-            font-size: 50px;
-            text-align: center;
-            color:#2d2d2d;
-            font-family: 'Roboto', 'Open Sans', 'Lato';
-           
         }
-        .home h2{
-            font-size: 30px;
-            text-align: center;
-            
+        .circle {
+           width: 60px;
+           height: 60px;
+           background-color: #fed600;
+           border-radius: 50%;
+           position: absolute;
+           top: -30px;
+           right: 80px;
+           display: flex;
+           justify-content: left;
+           align-items: left;
+           color: white;
+           font-weight: bold;
         }
-        .background{
-            background-color: #fffbf0;
-            font-family:'Open Sans','Roboto','Lato';
-            font-size: 20px;
-        }
-        .content{
-            color:#2d2d2d;
-            font-size: 35px;
-        }
-
-        .highlights {
-            
-            padding: 40px 20px;
-            text-align:left;
-            color: #2d2d2d;
-        }
-
-        .highlights h2 {
-            font-size: 36px;
-            
-            
-        }
-
-        .highlights ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .highlights li {
-            font-size: 25px;
-            margin: 10px 0;
-            color: #333;
-        }
-
         .footer{
             background-color: white;
             text-align: center;
         }
-
-        .blink {
-            /* animation: blink-animation 1s steps(2, start) infinite;
-            -webkit-animation: blink-animation 1s steps(2, start) infinite; */
-            color: rgb(12, 12, 12);
-            font-weight: bold;
-            font-size: 30px;
-        }
-         /* @keyframes blink-animation {
-            to {
-                visibility: hidden;
-            }
-        }
-
-        @-webkit-keyframes blink-animation {
-            to {
-                visibility: hidden;
-            } */
-        
-    .container {
-        display: flex;
-        align-items: center; /* Align items vertically */
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                justify-content: space-between; /* Space between text & image */
-      padding: 30px;
-    }
-
-    .image-section {
-      flex: 1;
-      text-align: right; /* Aligns image to right */
-    }
-
-    .image-section img {
-      max-width: 80%; /* Makes image responsive */
-      height: auto;
-    }
-    
-
-        
-    </style>
+  </style>
 </head>
 <body>
+  <div class="header">
+    <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
+    <div class="heading">
+        <h1>A DIMENSIONAL CONTROL SURVEY COMPANY</h1>
+        <h2>SURVEY & ALIGNMENT</h2></div>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="project.html">Projects</a>
+        <a href="industries.html">Industries</a>
+        <a href="contact.html" >Contact Us</a>
+    </div>
+</div>
+<br><br>
+<h1 class="mb-3" style="font-family: 'Libre Franklin', sans-serif">Precision Beyond Measure-<br> Dimensional Control Survey Experts</h1>
+      <h5 class="mb-4" style="font-family: 'Libre Franklin', sans-serif">Trusted partner in Oil &amp; Gas, Marine, Rigs, FPSO, and Offshore Engineering Solutions.</h5========================================================>
 
-    <div class="header">
-        <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
-        <div class="heading">
-            <h1>A DIMENSIONAL CONTROL SURVEY COMPANY</h1>
-            <h2>SURVEY & ALIGNMENT</h2></div>
-            <br><br>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="service.html">Services</a>
-            <a href="project.html">Projects</a>
-            <a href="industries.html">Industries</a>
-            <a href="contact.html">Contact Us</a>
+  <!-- Hero Section -->
+  <section class="hero-section d-flex flex-column zwc-content-left" >
+    <div class="container">
+      <!-- <h1 class="mb-3">Precision Beyond Measure,<br> Dimensional Control Survey Experts</h1>
+      <h2 class="mb-4">Trusted partner in Oil &amp; Gas, Marine, Rigs, FPSO, and Offshore Engineering Solutions.</h2> -->
+      <div class="container-fluid p-0">
+        <div class="bar w-100">
+          <!-- <div class="circle"> -->
+            <i class="bi bi-star">
+              
+            </i>  <!-- You can put text or icon -->
+              <ul class="highlight-list list-unstyled">
+                <li>✅ Reverse Engineering &amp; As-Built Documentation</li><br>
+                <li>✅ Offshore &amp; Onshore Dimensional Control</li><br>
+                <li>✅ Rig Alignment, FPSO Retrofit Support</li><br>
+                <li>✅ 3D Laser Scanning &amp; Modeling</li>
+              </ul>
+      
+            <br>
+          </div>
         </div>
+
+      <br>
+      <a href="tel:+919400005210" class="btn btn-cta">Contact Us</a>
     </div>
-    <div class="background">
-    <br><br><br>
-     <section class="home" >
-        <h1>Precision Beyond Measure - Dimensional Control Survey Experts
-        </h1>
-        <h2>Trusted partner in Oil & Gas, Marine, Rigs, FPSO, and Offshore Engineering Solutions.
-        </h2>
-        <br>
-        <br>
-        <br>
-        <p class="blink">Contact Us Today:<a href="tel:+9194000000">+9194000000</a></p>
-        </p>
-     </section>
-     <div class="container"> 
-        <div class="highlights">
-            <h2>Our Highlights</h2>
-            <ul>
-                <li><img src="check.png" alt="check" style="width:16px;"> Reverse Engineering & As-Built Documentation</li>
-                <li><img src="check.png" alt="check" style="width:16px;">Offshore & Onshore Dimensional Control</li>
-                <li><img src="check.png" alt="check" style="width:16px;">Rig Alignment, FPSO Retrofit Support</li>
-                <li><img src="check.png" alt="check" style="width:16px;">3D Laser Scanning & Modeling</li>
-            </ul>    
-        </div>
-        <div class="image-section"> <img src="homeimg.jpg" alt="Company Image">
-            <img src="home1.png" alt="Company Image"> 
-        </div>
-        </div>
-         
-    
-    </div>
-    <div class="footer">
-        <footer>
-            <p>&copy; Dimensional Control Survey. All rights reserved.</p>
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
- 
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; Dimensional Control Survey. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
