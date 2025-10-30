@@ -16,7 +16,7 @@
       font-weight: 700;
     }
     .card img {
-      height: 200px;
+      height: 300px;
       object-fit: cover;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
@@ -29,12 +29,57 @@
     .card:hover {
       transform: translateY(-5px);
     }
+    .header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#f6cb4a;
+        padding: 10px 20px;
+        color: white;
+    }  
+    logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .menu a {
+   
+         text-decoration: none;
+         margin-left: 20px;
+         font-size: 25px;
+         color: #2d2d2d;
+    }
+    .menu a:hover {
+        text-decoration: underline;
+    } 
+    .background{
+            background-color: #fffbf0;
+            font-family:'Open Sans','Roboto','Lato';
+            font-size: 20px;
+    }
+    .footer{
+            background-color: white;
+            text-align: center;
+    }
   </style>
 </head>
 <body>
+  <div class="header">
+    <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="project.html">Projects</a>
+            <a href="industries.html">Industries</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+  </div>
 
-  <div class="container py-5">
-    <h2 class="section-title mb-5">Fields of Application</h2>
+  <div class="background">
+    <header class="text-center py-2 text-black">
+      <h1 class="project">FIELDS OF APPLICATION</h1>
+    </header>
 
     <div class="row g-4">
       <div class="col-md-4">
@@ -75,7 +120,7 @@
 
       <div class="col-md-4">
         <div class="card">
-          <img src="images/shipbuilding.jpg" class="card-img-top" alt="Shipbuilding">
+          <img src="shipbuild.png" class="card-img-top" alt="Shipbuilding">
           <div class="card-body text-center">
             <h5 class="card-title">Shipbuilding</h5>
           </div>
@@ -84,7 +129,7 @@
 
       <div class="col-md-4">
         <div class="card">
-          <img src="project1.png" class="card-img-top" alt="Metallurgy">
+          <img src="metallurgy.png" class="card-img-top" alt="Metallurgy">
           <div class="card-body text-center">
             <h5 class="card-title">Metallurgy</h5>
           </div>
@@ -93,7 +138,7 @@
 
       <div class="col-md-4 mx-auto">
         <div class="card">
-          <img src="images/machined-parts.jpg" class="card-img-top" alt="Machined Parts">
+          <img src="machinepart.png" class="card-img-top" alt="Machined Parts">
           <div class="card-body text-center">
             <h5 class="card-title">Machined Parts</h5>
           </div>
@@ -101,6 +146,9 @@
       </div>
     </div>
   </div>
+  <footer class="footer">
+    <p>&copy; Dimensional Control Survey. All rights reserved.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
