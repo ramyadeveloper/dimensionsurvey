@@ -137,20 +137,34 @@
               <textarea class="form-control" rows="4" placeholder="Enter your message"></textarea>
             </div>
             <button type="submit" class="btn btn-custom w-100">Submit</button>
-          </form> 
-          <form action="https://formspree.io/f/mldrgxyz" method="POST">
-            <input type="text" name="name" placeholder="Your Name" class="form-control" required>
-            <input type="email" name="email" placeholder="Your Email" class="form-control" required>
-            <textarea name="message" placeholder="Message" class="form-control"></textarea>
-            <button type="submit" class="btn btn-custom w-100">Submit</button>
-          </form>
-          
+        </form>
+        <p id="responseMsg" class="mt-3 fw-semibold text-center"></p>
         </div>
       </div>
-
     </div>
   </div>
 </div>
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  // Initialize EmailJS
+  emailjs.init("_mmpVJJLVOIYirYnq"); 
+
+  // Handle form submission
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_55q3dbb', 'template_8k7syho', this)
+      .then(() => {
+        document.getElementById('responseMsg').innerHTML = "✅ Message sent successfully!";
+        this.reset();
+      }, (error) => {
+        document.getElementById('responseMsg').innerHTML = "❌ Failed to send. Try again later.";
+        console.error('Error:', error);
+      });
+  });
+</script>
 <footer class="bg-dark text-white text-center py-3">
     <p>&copy; Dimensional Control Survey. All rights reserved.</p>
 </footer>
