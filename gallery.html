@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Dimensional Survey Systems</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffbf0;
+    }
+    .gallery-title {
+      text-align: center;
+      font-weight: 600;
+      font-size: 2rem;
+      margin: 30px 0;
+    }
+    .carousel-item img {
+      height: 10%;       /* adjust image height */
+      width: 10%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#f6cb4a;
+        padding: 10px 20px;
+        color: white;
+     }  
+    logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .menu a {
+   
+         text-decoration: none;
+         margin-left: 20px;
+         font-size: 25px;
+         color: #2d2d2d;
+    }
+    .menu a:hover {
+        text-decoration: underline;
+    } 
+    .gallery h1{
+        font-size: 50px;
+        text-align: center;
+        color:#2d2d2d;
+        font-family: 'Roboto', 'Open Sans', 'Lato';
+      }
+      .gallery h2{
+        font-size: 45px;
+        /* text-align: center; */
+        color:#2d2d2d;
+        font-family: 'Roboto', 'Open Sans', 'Lato';
+      }
+      .background{
+            background-color: #fffbf0;
+            font-family:'Open Sans','Roboto','Lato';
+            font-size: 20px;
+      }
+      .footer{
+            background-color: white;
+            text-align: center;
+      }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="Logo.png" alt="Company Logo" height="150"width="150"></div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="project.html">Projects</a>
+                <a href="industries.html">Industries</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+    </div>
+    <br>
+    <!-- Header -->
+  <div class="background">
+    <header class="text-center py-2 text-black">
+      <h1 class="gallery">FIELD SURVEY PHOTOS</h1>
+    </header>
+    
+
+    <!-- Bootstrap Carousel -->
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+
+        <div class="carousel-item">
+          <img src="site1.jpg" class="d-block w-100" alt="site 1">
+        </div>
+
+        <div class="carousel-item">
+          <img src="site2.jpg" class="d-block w-100" alt="site 2">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="site3.jpg" class="d-block w-100" alt="site 3">
+        </div>
+          
+        <div class="carousel-item">
+            <img src="site4.jpg" class="d-block w-100" alt="site 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="site5.jpg" class="d-block w-100" alt="site 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="site6.jpg" class="d-block w-100" alt="site 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="site7.jpg" class="d-block w-100" alt="site 2">
+        </div>
+
+
+      </div>
+
+      <!-- Previous/Next buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+     <!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; Dimensional Control Survey. All rights reserved.</p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
