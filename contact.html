@@ -103,13 +103,13 @@
           <p><strong>🌐 Website:</strong> <a href="https://www.dimensionalsurvey.com" class="text-decoration-none" target="_blank">www.dimensionalsurvey.com</a></p>
           <p><strong>📅 Working Hours:</strong> Mon–Sat, 9 AM – 6 PM</p>
         <!-- </div> -->
-              </div>
+        </div>
 
       <!-- Projected Box Contact Form -->
       <div class="col-lg-6 mb-4">
         <div class="contact-box">
           <h3 class="fw-bold mb-3 text-center">Send Us a Message</h3><br>
-           <form>
+           <form id="contact-form">
             <div class="mb-3">
               <label class="form-label">Name</label>
               <input type="text" class="form-control" placeholder="Enter your name" required>
@@ -142,33 +142,31 @@
             </div>
             <button type="submit" class="btn btn-custom w-100">Submit</button>
         </form>
-        <p id="responseMsg" class="mt-3 fw-semibold text-center"></p>
+        <div id="response" class="text-center mt-3"></div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- EmailJS SDK -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxLjSTkjAjG--GXkBDFwJ0w1Sz8_kTy4IcllPLVTdfOebMSPI9ghgBDH_o3IStmmORtBA/exec"; // <-- paste your URL here
 
-<script type="text/javascript">
-  // Initialize EmailJS
-  emailjs.init("_mmpVJJLVOIYirYnq"); 
+    const form = document.getElementById('contact-form');
+    const response = document.getElementById('response');
 
-  // Handle form submission
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm('service_55q3dbb', 'template_8k7syho', this)
-      .then(() => {
-        document.getElementById('responseMsg').innerHTML = "✅ Message sent successfully!";
-        this.reset();
-      }, (error) => {
-        document.getElementById('responseMsg').innerHTML = "❌ Failed to send. Try again later.";
-        console.error('Error:', error);
-      });
-  });
-</script>
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = Object.fromEntries(new FormData(form).entries());
+      fetch(scriptURL, { method: 'POST', body: JSON.stringify(formData) })
+        .then(res => {
+          response.innerHTML = '<div class="alert alert-success">Message Sent Successfully!</div>';
+          form.reset();
+        })
+        .catch(err => {
+          response.innerHTML = '<div class="alert alert-danger">Error sending message.</div>';
+        });
+    });
+  </script>
 <footer class="bg-dark text-white text-center py-3">
     <p>&copy; Dimensional Control Survey. All rights reserved.</p>
 </footer>
